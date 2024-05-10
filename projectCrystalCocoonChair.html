@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Mason Preece Portfolio</title>
+    <link href = "/myStyleSheet.css" rel = "stylesheet" type = "text/css">
+    <meta content = "width=device-width, initial-scale=1" name = "viewport">
+    <script src="/myScripts.js"></script>
+</head>
+
+<body>
+	<div id="borderContent">
+        <div id="topContent">
+            <h1 id ="nameText">Mason Preece</h1>
+
+            <a href="/index.html" class="page" id="page1">Home</a>
+            <a href ="/myProjects.html" class="page" id ="page2">Projects</a>
+            <a href = "/contact.html" class="page" id ="page3">Contact</a>
+
+        </div>
+
+        <div id="bottomContent">
+            <input type ="checkbox" id ="darkModeButton" onclick="darkModeFunction()"></input>
+            <p id ="darkModeText"> Dark Mode</p>
+        </div>
+
+        <div id = "borderWhiteRectangle"></div>
+
+    </div>
+
+    <div id="mainContent">
+        <div class="subPageContent">
+            <a id="backButton" href="/myProjects.html"><< Back to projects</a>
+
+            <div id="projectDescription">
+                <h2>Crystal Cocoon Chair</h2>
+                <p>Made out of only cardboard and hot glue,
+                    this geometrically-designed chair is strong 
+                    enough to support a person's full weight. 
+                    The high back and sides convey the feeling of being inside 
+                    a comfortable cocoon, while the geometric form looks 
+                    crystalline. I made this chair with a small group, and I 
+                    personally contributed by using <strong>Grasshopper</strong>
+                    to generate some of the form, by formatting the final 
+                    Rhino file for output to a CAD machine, and by assembling
+                    the chair.
+                </p>
+            </div>
+
+            <div class="imageDisplay">
+                <img id="mainImage" src ="/Images/CrystalCocoonChair/1.jpg" width=100% height=100%>
+
+                <div class="imageGallery">
+                    <img id="img1" class ="gallery" src="/Images/CrystalCocoonChair/1.jpg" width=100% height=100% 
+                    onclick = "changeImage('/Images/CrystalCocoonChair/1.jpg', 'img1')">
+                    <img id="img2" class ="gallery" src="/Images/CrystalCocoonChair/2.jpg" width=100% height=100%
+                    onclick = "changeImage('/Images/CrystalCocoonChair/2.jpg', 'img2')">
+                    <img id="img3" class ="gallery" src="/Images/CrystalCocoonChair/3.jpg" width=100% height=100%
+                    onclick = "changeImage('/Images/CrystalCocoonChair/3.jpg', 'img3')">
+                    <img id="img4" class ="gallery" src="/Images/CrystalCocoonChair/4.jpg" width=100% height=100%
+                    onclick = "changeImage('/Images/CrystalCocoonChair/4.jpg', 'img4')">
+                    <img id="img5" class ="gallery" src="/Images/CrystalCocoonChair/5.jpg" width=100% height=100%
+                    onclick = "changeImage('/Images/CrystalCocoonChair/5.jpg', 'img5')">
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <button id = "expandImageButton" onclick = "expandViewImage()">
+        <img id = "expansionPNG" src="/Images/ExpandArrows.png">
+    </button>
+    
+    <div id = "imageWindow">
+        <img id = "expandableImage" src="">
+    </div>
+    <button id = "imageEscape" onclick = "collapseViewImage()"><b>Exit</b></button>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Mason Preece Portfolio</title>
+    <link href = "/myStyleSheet.css" rel = "stylesheet" type = "text/css">
+    <meta content = "width=device-width, initial-scale=1" name = "viewport">
+    <script src="/myScripts.js"></script>
+</head>
+
+<body>
+	<div id="borderContent">
+        <div id="topContent">
+            <h1 id ="nameText">Mason Preece</h1>
+
+            <a href="/index.html" class="page" id ="page1">Home</a>
+            <a href="/myProjects.html" class="page" id ="page2">Projects</a>
+            <p class="page" id ="page3" style="color:#ff9900"><b>Contact</b></p>
+
+        </div>
+
+        <div id="bottomContent">
+            <input type ="checkbox" id ="darkModeButton" onclick="darkModeFunction()"></input>
+            <p id ="darkModeText"> Dark Mode</p>
+        </div>
+
+        <div id = "borderWhiteRectangle"></div>
+
+    </div>
+
+    <div id="mainContent">
+
+        <div id="contactInfoContent">
+            <br>
+            <h2>Contact Me!</h2>
+            <p>Email: Mason.Preece@woodbury.edu</p>
+            <p>LinkedIn: <a href = "https://www.linkedin.com/in/mason-preece/">https://www.linkedin.com/in/mason-preece/</a></p>
+            <p id = "clickTrigger" onclick = "expandViewPDF()">Resume: <span
+                style="color: #ff9900 !important"> Click Here! </span></p>
+        </div>
+
+        
+    </div>
+
+    <iframe id = "expandablePDF" src="/Files/WebsiteResumeSpring2024.pdf"></iframe>
+    <button id = "escape" onclick = "collapseViewPDF()"><b>Exit</b></button>
+
+
+
+
+
+
+</body>
+
+</html>
