@@ -327,7 +327,7 @@ figure:hover figcaption{
 .imageGallery{
     margin: auto;
 
-    justify-content: center;
+    justify-content: safe center;
     padding-top: 5%;
 
     display: flex;
