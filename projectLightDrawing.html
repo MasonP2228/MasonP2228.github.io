@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Mason Preece Portfolio</title>
+    <link href = "/myStyleSheet.css" rel = "stylesheet" type = "text/css">
+    <link href = "myLargeScreenStyleSheet.css" media="screen and (min-width: 1800px)" rel = "stylesheet" type = "text/css">
+    <link href = "myTabletStyleSheet.css" media="screen and (max-width: 1100px) and (min-height: 800px)" rel = "stylesheet" type = "text/css">
+    <link href = "myMobileStyleSheet.css" media="screen and (max-width: 600px)" rel = "stylesheet" type = "text/css">
+    <meta content = "width=device-width, initial-scale=1" name = "viewport">
+    <script src="/myScripts.js"></script>
+</head>
+
+<body>
+	<div id="borderContent">
+        <div id="topContent">
+            <h1 id ="nameText">Mason Preece</h1>
+
+            <a href="/index.html" class="page" id="page1">Home</a>
+            <a href ="/myProjects.html" class="page" id ="page2">Projects</a>
+            <a href = "/contact.html" class="page" id ="page3">Contact</a>
+
+        </div>
+
+        <div id = "borderWhiteRectangle"></div>
+
+    </div>
+
+    <div id="mainContent">
+        <div class="subPageContent">
+            <a id="backButton" href="/myProjects.html"><< Back to projects</a>
+
+            <div id="projectDescription">
+                <h2>Robotic Light Drawing</h2>
+                <p>By using long exposure camera settings, it is possible to 
+                    capture the path of a moving light in a single photograph. 
+                    With this principle in mind, I created a couple of "light 
+                    drawings" as a part of a small group project by mounting a 
+                    light on Woodbury's <strong>KUKA robotic arm.</strong> The 
+                    desired paths for the light drawings were created using the 
+                    <strong>Grasshopper</strong> parametric design software 
+                    before being exported as KRL code for the robot to follow. 
+                    In addition to this, I programmed a Circuit Playground 
+                    Express microcontroller to act as the light source, which 
+                    allowed for multi-colored designs.
+                </p>
+            </div>
+
+            <div class="imageDisplay">
+                <img id="mainImage" src ="/Images/LightDrawings/1.jpg" width=100% height=100% onclick = "expandViewImage()">
+
+                <div class="imageGallery">
+                    <img id="img1" class ="gallery" src="/Images/LightDrawings/1.jpg" width=100% height=100% 
+                    onclick = "changeImage('/Images/LightDrawings/1.jpg', 'img1')">
+                    <img id="img2" class ="gallery" src="/Images/LightDrawings/2.jpg" width=100% height=100%
+                    onclick = "changeImage('/Images/LightDrawings/2.jpg', 'img2')">
+                    <img id="img3" class ="gallery" src="/Images/LightDrawings/3.png" width=100% height=100%
+                    onclick = "changeImage('/Images/LightDrawings/3.png', 'img3')">
+                    <img id="img4" class ="gallery" src="/Images/LightDrawings/4.jpg" width=100% height=100%
+                    onclick = "changeImage('/Images/LightDrawings/4.jpg', 'img4')">
+                    <img id="img5" class ="gallery" src="/Images/LightDrawings/5.png" width=100% height=100%
+                    onclick = "changeImage('/Images/LightDrawings/5.png', 'img5')">
+                    <img id="img6" class ="gallery" src="/Images/LightDrawings/6.png" width=100% height=100%
+                    onclick = "changeImage('/Images/LightDrawings/6.png', 'img6')">
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    
+    <div id = "imageWindow">
+        <img id = "expandableImage" src="">
+    </div>
+    <button id = "imageEscape" onclick = "collapseViewImage()"><b>Exit</b></button>
+
+
+
+
+
+
+</body>
+
+</html>

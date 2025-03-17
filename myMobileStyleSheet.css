@@ -376,3 +376,10 @@ figure:focus figcaption{
     z-index: 5;
     display: none;
 }
+
+video{
+    position: relative;
+    max-width: 90%;
+    left: 5%;
+    padding-top: 10px;
+}

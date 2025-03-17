@@ -378,3 +378,10 @@ figure:hover figcaption{
 #imageEscape:hover{
     cursor: pointer;
 }
+
+video{
+    position: relative;
+    max-width: 90%;
+    left: 5%;
+    padding-top: 10px;
+}
