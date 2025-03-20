@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Mason Preece Portfolio</title>
+    <link href = "/myStyleSheet.css" rel = "stylesheet" type = "text/css">
+    <link href = "myLargeScreenStyleSheet.css" media="screen and (min-width: 1800px)" rel = "stylesheet" type = "text/css">
+    <link href = "myTabletStyleSheet.css" media="screen and (max-width: 1100px) and (min-height: 800px)" rel = "stylesheet" type = "text/css">
+    <link href = "myMobileStyleSheet.css" media="screen and (max-width: 600px)" rel = "stylesheet" type = "text/css">
+    <meta content = "width=device-width, initial-scale=1" name = "viewport">
+    <script src="/myScripts.js"></script>
+</head>
+
+<body>
+	<div id="borderContent">
+        <div id="topContent">
+            <h1 id ="nameText">Mason Preece</h1>
+
+            <a href="/index.html" class="page" id="page1">Home</a>
+            <a href ="/myProjects.html" class="page" id ="page2">Projects</a>
+            <a href = "/contact.html" class="page" id ="page3">Contact</a>
+
+        </div>
+
+        <div id = "borderWhiteRectangle"></div>
+
+    </div>
+
+    <div id="mainContent">
+        <div class="subPageContent">
+            <a id="backButton" href="/myProjects.html"><< Back to projects</a>
+
+            <div id="projectDescription">
+                <h2>Fireworks!</h2>
+                <p>Fireworks! is an <strong>interactive web experience</strong> that I made using
+                    the p5.js and ml5.js libraries for <strong>JavaScript.</strong> It 
+                    utilizes <strong>machine learning</strong> to track users' hands as input. 
+                    Try it out yourself! <br><br>
+                    <a href="/Fireworks/fireworks.html" target="_blank" style="color:#ff9900">Click Here! (computer with web camera required)</a>
+                </p>
+            </div>
+
+            <div class="imageDisplay">
+                <img id="mainImage" src ="/Images/Fireworks/0.png" width=100% height=100% onclick = "expandViewImage()">
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    
+    <div id = "imageWindow">
+        <img id = "expandableImage" src="">
+    </div>
+    <button id = "imageEscape" onclick = "collapseViewImage()"><b>Exit</b></button>
+
+
+
+
+
+
+</body>
+
+</html>
