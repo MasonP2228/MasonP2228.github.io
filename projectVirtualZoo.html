@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Mason Preece Portfolio</title>
+    <link href = "/myStyleSheet.css" rel = "stylesheet" type = "text/css">
+    <link href = "myLargeScreenStyleSheet.css" media="screen and (min-width: 1800px)" rel = "stylesheet" type = "text/css">
+    <link href = "myTabletStyleSheet.css" media="screen and (max-width: 1100px) and (min-height: 800px)" rel = "stylesheet" type = "text/css">
+    <link href = "myMobileStyleSheet.css" media="screen and (max-width: 600px)" rel = "stylesheet" type = "text/css">
+    <meta content = "width=device-width, initial-scale=1" name = "viewport">
+    <script src="/myScripts.js"></script>
+</head>
+
+<body>
+	<div id="borderContent">
+        <div id="topContent">
+            <h1 id ="nameText">Mason Preece</h1>
+
+            <a href="/index.html" class="page" id="page1">Home</a>
+            <a href ="/myProjects.html" class="page" id ="page2">Projects</a>
+            <a href = "/contact.html" class="page" id ="page3">Contact</a>
+
+        </div>
+
+        <div id = "borderWhiteRectangle"></div>
+
+    </div>
+
+    <div id="mainContent">
+        <div class="subPageContent">
+            <a id="backButton" href="/myProjects.html"><< Back to projects</a>
+
+            <div id="projectDescription">
+                <h2>Virtual Zoo</h2>
+                <p> Building on my previous VR project, I was tasked with creating 
+                    a more immersive VR environment using <strong>Unreal Engine.</strong> 
+                    I decided to make a virtual visit to the zoo, with numerous animal 
+                    exhibits to look at and pathways to go down.<br>
+                    From this project, I learned how to allow for player movement 
+                    in a virtual reality setup. I also learned about lighting 
+                    techniques and proximity audio, which I used to add sound 
+                    effects to my animal exhibits.<br>
+                    The final <strong>virtual reality</strong> level was playable 
+                    on a university-provided headset. All assets were sourced online. 
+                </p>
+            </div>
+
+            <div class="imageDisplay">
+                <img id="mainImage" src ="/Images/VirtualZoo/1.png" width=100% height=100% onclick = "expandViewImage()">
+
+                <div class="imageGallery">
+                    <img id="img1" class ="gallery" src="/Images/VirtualZoo/1.png" width=100% height=100% 
+                    onclick = "changeImage('/Images/VirtualZoo/1.png', 'img1')">
+                    <img id="img2" class ="gallery" src="/Images/VirtualZoo/2.png" width=100% height=100%
+                    onclick = "changeImage('/Images/VirtualZoo/2.png', 'img2')">
+                    <img id="img3" class ="gallery" src="/Images/VirtualZoo/3.png" width=100% height=100%
+                    onclick = "changeImage('/Images/VirtualZoo/3.png', 'img3')">
+                    <img id="img4" class ="gallery" src="/Images/VirtualZoo/4.png" width=100% height=100%
+                    onclick = "changeImage('/Images/VirtualZoo/4.png', 'img4')">
+                    <img id="img5" class ="gallery" src="/Images/VirtualZoo/5.png" width=100% height=100%
+                    onclick = "changeImage('/Images/VirtualZoo/5.png', 'img5')">
+                    <img id="img6" class ="gallery" src="/Images/VirtualZoo/6.png" width=100% height=100%
+                    onclick = "changeImage('/Images/VirtualZoo/6.png', 'img6')">
+                    <img id="img7" class ="gallery" src="/Images/VirtualZoo/7.png" width=100% height=100%
+                    onclick = "changeImage('/Images/VirtualZoo/7.png', 'img7')">
+                    <img id="img8" class ="gallery" src="/Images/VirtualZoo/8.png" width=100% height=100%
+                    onclick = "changeImage('/Images/VirtualZoo/8.png', 'img8')">
+                    <img id="img9" class ="gallery" src="/Images/VirtualZoo/9.png" width=100% height=100%
+                    onclick = "changeImage('/Images/VirtualZoo/9.png', 'img9')">
+                    <img id="img10" class ="gallery" src="/Images/VirtualZoo/10.png" width=100% height=100%
+                    onclick = "changeImage('/Images/VirtualZoo/10.png', 'img10')">
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    
+    <div id = "imageWindow">
+        <img id = "expandableImage" src="">
+    </div>
+    <button id = "imageEscape" onclick = "collapseViewImage()"><b>Exit</b></button>
+
+
+
+
+
+
+
+</body>
+
+</html>

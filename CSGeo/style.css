@@ -1,0 +1,245 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+
+
+
+#sidePanel{
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  background-color: rgba(200, 200, 200, 1);
+  opacity: 1;
+  transition: width 2s, opacity 1.5s;
+  display: block;
+  z-index: 1;
+}
+
+#logo{
+  position: fixed;
+  display: block;
+  height: 100px;
+  width: 280px;
+  top: 10px;
+  left: 10px;
+  transition: left 2s;
+}
+
+#handLogo{
+  position: fixed;
+  display: none;
+  height: 100px;
+  width: 280px;
+  top: 10px;
+  left: 10px;
+  transition: left 2s;
+}
+
+#defaultInstructions{
+  position: absolute;
+  top: 111px;
+  left: 10px;
+  right: 10px;
+
+  font-family: monospace;
+  font-size: 0.9em;
+  line-height: 180%;
+
+  display: block;
+}
+
+#handInstructions{
+  position: absolute;
+  top: 111px;
+  left: 10px;
+  right: 10px;
+
+  font-family: monospace;
+  font-size: 0.9em;
+  line-height: 180%;
+
+  display: none;
+}
+
+#hideButton{
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+  width: 150px;
+  height: 35px;
+  font-family: monospace;
+  font-size: 0.9em;
+  border: solid black 2px;
+  background-color: rgba(225, 225, 225, 1);
+  display: block;
+}
+
+#showButton{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 74px;
+  height: 74px;
+  font-family: monospace;
+  font-size: 0.9em;
+  border: solid black 2px;
+  background-color: rgba(225, 225, 225, 1);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.shapeButtons{
+  position: fixed;
+  top: 0px;
+  display: flex;
+}
+
+.shapeButtons>*{
+  height: 70px;
+  width: 70px;
+  border: solid black 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#topButtons{
+  left: 36%;
+  transition: left 2s;
+}
+
+.primaryButtons{
+  position: fixed;
+  right: 0px;
+  top: 25%;
+  width: 70px;
+}
+
+.primaryButtons>*{
+  width: 70px;
+  height: 70px;
+  border: solid black 2px;
+}
+
+#switchButton{
+  height: 230px !important;
+}
+
+.secondaryButtons{
+  position: fixed;
+  left: 300px;
+  top: 25%;
+  width: 70px;
+}
+
+.secondaryButtons>*{
+  width: 70px;
+  height: 70px;
+  border: solid black 2px;
+}
+
+#leftButtons{
+  left: 300px;
+  transition: left 2s;
+}
+
+#objButton{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 37px;
+  width: 150px;
+  border: solid black 2px;
+  font-family: monospace;
+  font-size: 0.9em;
+  background-color: rgba(225, 225, 225, 1);
+}
+
+#stlButton{
+  position: fixed;
+  top: 37px;
+  right: 0px;
+  height: 37px;
+  width: 150px;
+  border: solid black 2px;
+  font-family: monospace;
+  font-size: 0.9em;
+  background-color: rgba(200, 200, 200, 1);
+}
+
+.handCursor{
+  height: 30px;
+  width: 20px;
+  display: none;
+  position: absolute;
+  left: 250px;
+  top: 550px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 900px){
+  #sidePanel{
+    width: 100%;
+  }
+
+  .shapeButtons>*{
+    height: 60px;
+    width: 60px;
+  }
+
+  .primaryButtons{
+    width: 60px;
+  }
+
+  .primaryButtons>*{
+    height: 60px;
+    width: 60px;
+  }
+
+  .secondaryButtons>*{
+    height: 60px;
+    width: 60px;
+  }
+
+  #switchButton{
+    height: 200px !important;
+  }
+
+  #objButton{
+    height: 30px;
+  }
+
+  #stlButton{
+    height: 32px;
+    top: 32px;
+  }
+
+  #showButton{
+    height: 64px;
+    width: 64px;
+  }
+
+  #logo{
+    left: 28%;
+  }
+
+  #handLogo{
+    left: 28%;
+  }
+
+  #hideButton{
+    left: 36%;
+    height: 70px;
+  }
+
+}
+
+@media screen and (min-width: 901px){
+  #topButtons{
+    left: 36%;
+  }
+}

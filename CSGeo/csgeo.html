@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.min.js"></script>
+    <script src="https://unpkg.com/ml5@1/dist/ml5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@davepagurek/p5.csg@0.0.3"></script>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <script src="inputAction.js"></script>
+    <script src="inputKeyboard.js"></script>
+    <script src="inputHandPose.js"></script>
+    <script src="inputMouse.js"></script>
+    <script src="geometryCallbacks.js"></script>
+    <script src="csgOperations.js"></script>
+    <script src="geometry.js"></script>
+    <script src="buildAction.js"></script>
+    <script src="stack.js"></script>
+
+
+    <div id="sidePanel">
+      <img src="Images/Logo.png" id = "logo">
+      <img src ="Images/HandControls.png" id = "handLogo">
+      <p id = "defaultInstructions">Welcome to CSGeo, the browser-based 3D&#8209;modeling
+        application!<br><br>
+        The controls for CSGeo are arranged in 3 sections. The top section contains 
+        controls for adding new shapes to your scene. The right section contains controls 
+        for selecting, moving, and deleting shapes. The left section contains controls for 
+        CSG operations. CSG operations combine 2 shapes to make a new one! Select your 
+        second shape with the 2nd button, make sure your two shapes are overlapping, and 
+        try it out!<br><br>
+        There are also 3 ways to control CSGeo. Use mouse controls by clicking on buttons.
+        Use keyboard controls by pressing the keys associated with each button. Or, use 
+        hand controls through your webcamera after clicking the hand icon button.<br><br>
+        Happy modeling!
+      </p>
+
+      <p id = "handInstructions">To use hand 
+      controls, move your hand in view of your web camera. A hand icon will appear,
+      and it will follow the motion of your index finger.<br><br>
+      To click on things, touch the tip of your thumb with your index finger. The icon 
+      will change when a click has been registered.<br>
+      <br><u>Troubleshooting</u><br><br>
+      If the hand icon does not appear, check to make sure that your finger is in view of the web camera.<br><br>
+      If the hand icon is not behaving as expected, please make sure that only one hand
+      is in view of the web camera.<br><br>If you are having difficulty clicking, you
+      may need to move your hand closer or further away from the web camera.</p>
+
+      <button id="hideButton" onclick="collapseInstructions()">Hide</button>
+    </div>
+
+    <button id="showButton" onclick="showInstructions()">Help</button>
+
+    <div class = "shapeButtons" id = "topButtons">
+      <img src="Buttons/Box.png" id ="boxButton" onclick="makeBox()">
+      <img src="Buttons/Sphere.png" id ="sphereButton" onclick="makeSphere()">
+      <img src="Buttons/Cylinder.png" id ="cylinderButton" onclick="makeCylinder()">
+      <img src="Buttons/Cone.png" id ="coneButton" onclick="makeCone()">
+      <img src="Buttons/Ellipsoid.png" id ="ellipsoidButton" onclick="makeEllipsoid()">
+      <img src="Buttons/Torus.png" id ="torusButton" onclick="makeTorus()">
+    </div>
+
+    <div class = "primaryButtons">
+      <img src="Buttons/Move.png" id ="moveButton" onclick ="makeMovement()">
+      <img src="Buttons/Select.png" id ="switchButton" onclick="switchCur()">
+      <img src="Buttons/Delete.png" id ="deleteButton" onclick="deleteGeo()">
+    </div>
+
+    <div class = "secondaryButtons" id = "leftButtons">
+      <img src="Buttons/Second.png" id = "secondarySelectButton" onclick="switchSecondary()">
+      <img src="Buttons/Union.png" id = "unionButton" onclick="makeUnion()">
+      <img src="Buttons/Difference.png" id = "subtractButton" onclick="makeDifference()">
+      <img src="Buttons/Intersection.png" id = "intersectButton" onclick="makeIntersection()">
+      <img src="Buttons/Hand.png" id ="handPoseButton" onclick="handControls()">
+    </div>
+
+    
+    <!-- <button id ="objButton" onclick="saveObj()">Save as OBJ</button>
+    <button id ="stlButton" onclick="saveStl()">Save as STL</button> -->
+
+    <button id ="objButton">These are disabled download buttons.</button>
+    <button id ="stlButton">Contact me for the full version.</button>
+
+
+    <img src="Images/HandIcon.png" class= "handCursor" id="handCursor">
+
+  </body>
+</html>
