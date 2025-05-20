@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Mason Preece Portfolio</title>
+    <link href = "/myStyleSheet.css" rel = "stylesheet" type = "text/css">
+    <link href = "myLargeScreenStyleSheet.css" media="screen and (min-width: 1800px)" rel = "stylesheet" type = "text/css">
+    <link href = "myTabletStyleSheet.css" media="screen and (max-width: 1100px) and (min-height: 800px)" rel = "stylesheet" type = "text/css">
+    <link href = "myMobileStyleSheet.css" media="screen and (max-width: 600px)" rel = "stylesheet" type = "text/css">
+    <meta content = "width=device-width, initial-scale=1" name = "viewport">
+    <script src="/myScripts.js"></script>
+</head>
+
+<body>
+	<div id="borderContent">
+        <div id="topContent">
+            <h1 id ="nameText">Mason Preece</h1>
+
+            <a href="/index.html" class="page" id="page1">Home</a>
+            <a href ="/myProjects.html" class="page" id ="page2">Projects</a>
+            <a href = "/contact.html" class="page" id ="page3">Contact</a>
+
+        </div>
+
+        <div id = "borderWhiteRectangle"></div>
+
+    </div>
+
+    <div id="mainContent">
+        <div class="subPageContent">
+            <a id="backButton" href="/myProjects.html"><< Back to projects</a>
+
+            <div id="projectDescription">
+                <h2>tARget</h2>
+                <p>In one of my classes during the spring of 2025, I was 
+                    tasked with making an <strong>AR experience.</strong> I 
+                    decided to create a simple game using <strong>Unreal Engine.</strong> 
+                    From Unreal, I <strong>packaged my project for Android,</strong> 
+                    and people in the class could play it on a Galaxy tablet.<br>
+                    In the game, users have 30 seconds to hit as many targets as they can. 
+                    Targets appear randomly within a range of motion around their device's 
+                    initial position. Users can tilt and move their device to aim, and they 
+                    can tap the screen to fire a ball at a target. <br>
+                    This was my first time working with a game engine, and I learned a 
+                    lot about Unreal from this project. In particular, I learned how 
+                    to use Unreal's node-based approach to programming. 
+                </p>
+            </div>
+
+            <div class="imageDisplay">
+                <video controls> 
+                    <source src="/Images/tARget/tARget.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+
+            
+        </div>
+    </div>
+
+    
+    <div id = "imageWindow">
+        <img id = "expandableImage" src="">
+    </div>
+    <button id = "imageEscape" onclick = "collapseViewImage()"><b>Exit</b></button>
+
+
+
+
+
+
+</body>
+
+</html>
