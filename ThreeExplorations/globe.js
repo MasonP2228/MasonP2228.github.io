@@ -128,9 +128,9 @@ function animate(time) {
   for(let i = 0; i < cityList.length; i++){
     // finding the local time for each city
     let localHour = hours + cityList[i].timeDif;
-    if(localHour <= 0){
+    if(localHour < 0){
       localHour += 24;
-    } else if(localHour > 24){
+    } else if(localHour >= 24){
       localHour -= 24;
     }
     // creating the text
