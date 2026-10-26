@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.message{
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#startupMessage{
+  display: inline;
+}
+
+#successMessage{
+  display: none;
+}
+
+#failureMessage{
+  display: none;
+}
+
+#overlay{
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: gold;
+  display: none;
+}
+
+#lapCounter{
+  text-align: left;
+  padding-left: 15%;
+  display: inline;
+}
+
+#timerText{
+  text-align: right;
+  padding-left: 50%;
+  display: inline;
+}
