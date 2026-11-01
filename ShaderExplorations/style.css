@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#controls{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 250px;
+  height: 100%;
+  background-color: #cccccc;
+}
+
+#controls>*{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1, h3, label, p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input{
+  width: 220px;
+  margin-left: 15px;
+}
+
+#invertBox{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+#uploadText{
+  position: absolute;
+  z-index: 1;
+  left: 100px;
+  bottom: 36px;
+}
