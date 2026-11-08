@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.8.24/two.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+      <div id="sideMenu">
+        <h3>Web Illustrations :)</h3>
+        <p>Draw a picture on the canvas!<br>
+          To get started, add shapes to the <br>
+          scene using the buttons below.<br> 
+          Then, choose a shape from the <br> 
+          Scene Objects list to modify <br>
+          its properties. Happy drawing! 
+        </p>
+
+        <div id="sceneSetup">
+          <h4>Scene Setup</h4>
+
+          <label id="backgroundColorDiv">Background Color:
+            <input type="color" id="backgroundColor" value="#ffffff">
+          </label>
+
+          <br>
+
+          <label id="circle">
+            <button type="button" id="circleButton" class="shapeButton">Add Circle to Scene</button>
+          </label>
+
+          <br>
+
+          <label id="rectangle">
+            <button type="button" id="rectangleButton" class="shapeButton">Add Rectangle to Scene</button>
+          </label>
+
+          <br>
+
+          <label id="triangle">
+            <button type="button" id="triangleButton" class="shapeButton">Add Triangle to Scene</button>
+          </label>
+
+        </div>
+
+        <div id="objectsList">
+          <h4>Scene Objects</h4>
+
+          <div id="objectsContainer">
+            <ul id="sceneObjects"></ul>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div id="bottomMenu">
+        <div id = "controlPanel">
+          <h4 id="editingText">Example Text</h4>
+
+          <label id="color">Change Color:
+            <input type="color" id="changeColor" value="#ffffff">
+          </label>
+
+          <label id="move">
+            <button type="button" id="moveButton">Move</button>
+          </label>
+
+          <div id="sliderContainer">
+            <label id="stretchX" class="sliderLabel"> Width:
+              <input type="range" id="stretchXSlider" class="slider" min="0.01" max="10" step="0.01" value="1">
+            </label>
+
+            <label id="stretchY" class="sliderLabel"> Height:
+              <input type="range" id="stretchYSlider" class="slider" min="0.01" max="10" step="0.01" value="1">
+            </label>
+
+            <label id="rotation" class="sliderLabel"> Rotation:
+              <input type="range" id="rotationSlider" class="slider" min="0" max="360" step="1" value="0">
+            </label>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+    <script src="main.js"></script>
+    <script src="userGeos.js"></script>
+    <script src="userInput.js"></script>
+  </body>
+</html>

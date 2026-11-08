@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+label, button, h3, h4, li, p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sideMenu{
+  position: absolute;
+  right: 15px;
+}
+
+.shapeButton{
+  width: 205px;
+  background-color: white;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#objectsContainer{
+  background-color: white;
+  width: 230px;
+  max-height: 230px;
+  overflow-y: scroll;
+}
+
+li{
+  padding: 5px;
+  border: solid black 2px;
+}
+
+#bottomMenu{
+  position: absolute;
+  left: 50px;
+  bottom: 30px;
+  display: none;
+}
+
+#move{
+  position: absolute;
+  left: 200px;
+  bottom: 0px;
+}
+
+#moveButton{
+  width: 100px;
+  background-color: white;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#sliderContainer{
+  position: absolute;
+  bottom: 50px;
+}
+
+.sliderLabel{
+  position: absolute;
+  top: 10px;
+}
+
+#stretchX{
+  left: 350px;
+}
+
+#stretchY{
+  left: 500px;
+}
+
+#rotation{
+  left: 650px;
+}
+
+.slider{
+  width: 100px;
+}
